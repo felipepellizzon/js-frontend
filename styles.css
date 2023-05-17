@@ -2,11 +2,19 @@
   width: 100%;
 }
 
+h1,
+h3,
+span {
+  margin: 0;
+  padding: 0;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .title {
@@ -21,7 +29,21 @@
   margin: 5px;
 }
 
-p {
+.context {
   font-size: 15px;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#texto {
+  font-weight: bold;
 }
