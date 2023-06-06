@@ -7,17 +7,18 @@
     <title>Exemplo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="full-width main">
-        <h1 class="title">Bem vindo a um exemplo de JS.</h1>
+    <div id="main_div" class="full-width main">
+        <h1 id="title" class="title">Bem vindo a um exemplo de JS.</h1>
 
-        <h3 class="sub-title">O que é o JavaScript?</h3>
+        <h3 id="sub-title" class="sub-title">O que é o JavaScript?</h3>
 
         <div class="context">
-            <span>
+            <span id="span">
                 JavaScript® (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em
                 objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas
                 usada também em vários outros ambientes sem browser, tais como node.js, Apache CouchDB e Adobe
@@ -50,15 +51,62 @@
         </div>
         <hr style="color: black;" class="full-width">
         <div class="context">
-            <span> Com o JS, é possível fazer eventos com base com no click e realizar uma ação tipo:</span>
+            <span id="span"> Com o JS, é possível fazer eventos com base com no click e realizar uma ação tipo:</span>
             <button onclick="clickFunction()">Clique aqui!</button>
         </div>
         <div class="toggle-text">
-            <span>Também trocar o texto de algo:</span>
+            <span id="span">Também trocar o texto de algo:</span>
             <span id="texto">Texto</span>
             <button onclick="changeText()">Olha eu aqui!</button>
         </div>
+        <div>
+            <span id="span">Também podemos estilizar algo feio.</span>
+            <button onclick="applyClass()">Bora ficar bunito?</button>
+        </div>
+        <div>
+            <span id="span">Ou tambem gerar uma carta: </span>
+            <button onclick="appearCard()">Apareça card!</button>
+        </div>
+        <div id="span_card"><span id="span">Aqui vai ter um card pokémon!</span></div>
+        <div id="card" style="visibility: hidden;">
+            <div class="cartao-pokemon aberto tipo-eletrico" id="cartao-pikachu">
+                <div class="cartao-topo">
+                    <div class="detalhes">
+                        <h2 class="nome">Pikachu</h2>
+                        <span>#001</span>
+                    </div>
+                    <span class="tipo">raio</span>
+
+                    <div class="cartao-imagem">
+                        <img src="images/pikachu.png" alt="Imagem do pikachu">
+                    </div>
+                </div>
+
+                <div class="cartao-info">
+                    <div class="status">
+                        <h3>Status</h3>
+                        <ul>
+                            <li>Hp: 300</li>
+                            <li>Ataque: 600</li>
+                            <li>Defesa: 500</li>
+                            <li>Velocidade: 300</li>
+                            <li>Total: 1700</li>
+                        </ul>
+                    </div>
+
+                    <div class="habilidades">
+                        <h3>Habilidades</h3>
+                        <ul>
+                            <li>Choque do Trovão</li>
+                            <li>Investida Trovão</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
 </body>
 
 </html>
