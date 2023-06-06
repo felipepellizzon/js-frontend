@@ -22,14 +22,15 @@ function applyClass() {
   let new_title = document.getElementById("title");
   let new_sub_title = document.getElementById("sub-title");
   let new_span = document.querySelectorAll("span");
+  let new_button = document.querySelectorAll("button");
 
   main_div.classList.add("new-main");
   new_title.classList.add("new-title");
   new_sub_title.classList.add("new-sub-title");
   new_span.forEach((el) => {
-    console.log("aoba");
     el.classList.add("new-span");
   });
+  new_button.forEach((el) => el.classList.add("new-button"));
 }
 
 function appearCard() {

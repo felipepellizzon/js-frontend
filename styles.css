@@ -86,6 +86,21 @@ span {
   color: #00000d;
 }
 
+.new-button {
+  align-items: center;
+  padding: 6px 14px;
+  margin-left: 10px;
+  font-family: "Montserrat";
+  border-radius: 6px;
+  border: none;
+
+  background: #6e6d70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+    inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
+    0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #dfdedf;
+}
+
 .cartao-pokemon {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
